@@ -1,5 +1,10 @@
 name: My first action
 description: "My first action"
+inputs:
+  person:
+    description: "The name of the person to greet"
+    required: true
+    default: "Andrew"
 runs:
   using: "node20"
   main: "src/index.js"
